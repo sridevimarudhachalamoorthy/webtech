@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            PRODUCT ENQUIRY
+        </title>
+         <!-- link to Bootstrap minified css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- link to Jquery minified-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- link to Bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- link to fontawesome CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body >
+        <form   >
+            <table class="table-hover" style="text-align: center; border: dodgerblue">
+            <tr>
+                <td>NAME  </td>
+                <td><input type="text" name="Name" pattern="[A-Za-z]{6,}">
+                </td>
+            </tr>
+            <tr> 
+                <td>DOB</td>
+                <td><input type="date" name="Date" >
+                </td>
+            </tr>
+           <tr> 
+               <td>GENDER</td>
+               <td> <input type="radio" name="gender" value="male" checked>MALE
+                <input type="radio" name="gender" value="female" >FEMALE
+                 <input type="radio" name="gender" value="other" >OTHER</td>
+            </tr>
+             <tr> 
+                <td>
+                 MAIL
+                </td>
+                <td>
+                    <input type="text" name="mail" >
+                </td>
+            </tr>  
+            <tr> 
+                <td>
+                 MOBILE
+                </td>
+                <td>
+                    <input type="text" name="phone" pattern="[0-9]{10}">
+                </td>
+            </tr> 
+            <tr> 
+                <td>
+                 ADDRESS
+                </td>
+                <td>
+                        <textarea></textarea>
+                    
+                </td>
+            </tr> 
+            <tr> 
+                <td>
+                 CITY
+                </td>
+                <td>
+                    <input type="text" name="city" >
+                    
+                </td>
+            </tr> 
+            <tr> 
+                <td>
+                 PINCODE
+                </td>
+                <td>
+                    <input type="text" name="pin"  pattern="[0-9]{6}">
+                    
+                </td>
+            </tr> 
+           <tr> 
+                <td>
+                 PRODUCT ITEMS
+                </td>
+                <td>
+                    <select name="items" multiple>
+                        <option value="pencil" >PENCIL </option>
+                        <option value="box" >BOX </option>
+                        <option value="pen" >PEN </option>
+                        <option value="eraser" >ERASER </option>
+                        <option value="catridge" >CATRIDGE </option>
+                    </select>
+                    
+                </td>
+            </tr>
+            <tr> 
+               <td>MODE OF DELIVERY</td>
+               <td> <input type="radio" name="mode" value="male" checked>ONLINE
+                <input type="radio" name="mode" value="female" >OFFLINE
+                </td>
+            </tr>
+            <tr> 
+               <td>EMI</td>
+               <td> <input type="radio" name="emi" value="male" checked>YES
+                <input type="radio" name="emi" value="female" >NO
+                 </td>
+            </tr>
+            <tr> 
+                
+                <td><button class="btn-success"  style="text-align: center">SUBMIT</button>
+                </td>
+            </tr>
+        
+        </table>
+        </form>
+    </body>
+</html>
