@@ -1,0 +1,175 @@
+*{
+    margin: 100;
+    padding: 10;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}  
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),  url(imagess/Desktop-Nature-Landscape-Images-Pics.jpg);
+    background-size:auto;
+    height: 100vh;
+    background-position: center;
+   
+
+}
+
+
+ul{
+    list-style-type: none; 
+    float: right;
+    margin-top: 30px; 
+} 
+
+ul li{
+    display: inline-block;
+} 
+
+ul li a{
+    text-decoration: none; 
+    color: rgb(8, 8, 8); 
+    padding: 10px  20px ; 
+    border: 1px solid transparent; 
+    transition: 0.2s ease-out;
+    color: red;
+} 
+
+ul li a:hover{
+    background-color:white ;
+}  
+
+ul li.active a{
+    background-color:white ;
+}
+
+.logo img{ 
+    margin-left: 5vh; 
+    margin-top: 2vh;
+    float: left;
+    width: 155px; 
+    height:155x;
+} 
+.logo1{
+    margin-left: 5vh; 
+    margin-top: 2vh;
+    float: right;
+    width: 155px; 
+    height:155x;
+}
+.title{
+    position: absolute; 
+    top: 45%;
+    left:50%; 
+    color: white; 
+    font-family: 'Brush Script MT';
+    transform: translate(-50%,-50%);
+} 
+.title{
+    border: 1px solid transparent; 
+}  
+.heading{
+    color:white;
+    font-size: 90px;
+    text-shadow: 4px 8px 8px black;
+    font-family: 'Abril Fatface', cursive;
+font-family: 'Geostar Fill', cursive;
+font-family: 'Teko', sans-serif;
+    letter-spacing: -1px;
+    margin-left: 10px;
+    display: inline;
+}  
+.head2{ 
+    font-size: 40px;
+} 
+h2{
+    left: 60%;
+}
+.subtitle{ 
+    left: 70%;
+    color: white;
+    font-size: 20px;
+    font-family: 'Allison', cursive; 
+    text-align: justify;
+}
+
+.button{ 
+    position: absolute;  
+    top: 70%; 
+    left: 47%;
+    transform: translate(-50%,-50%);   
+} 
+
+.btn{
+    text-decoration: none;  
+    border: 1px solid #fff;    
+    padding: 1vh; 
+    margin-right: 2vh; 
+    color: black; 
+    color:red;
+} 
+
+.btn:hover{
+    background-color: white; 
+    color: black;
+} 
+
+.buy{
+    margin-left:25%;
+}
+a{
+    text-decoration: none;
+}
+.buy:hover{
+    background-color: white; 
+    color: black;
+}
+.warning{
+    color: red;
+}
+blockquote{
+    border: 2px solid black; 
+    width: 70px;
+    text-align: center;
+    
+}
+img{
+      width: 100px;
+      height:150px; 
+      margin-left: 20px;
+      border: 5px double black;
+      padding: 2px;
+}
+
+.form{ 
+   
+    margin-top: 278px;
+    margin-left:590px;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+} 
+button{
+    margin-left: 40%;
+}
+h1{
+    margin-left: 15%;
+}
+label{
+    display: inline-block;
+    width: 110px;
+    
+} 
+.heading1{
+    margin-left: 475px;
+    color: rgb(236, 245, 102); 
+    font-size: 55px;
+    line-height: 50px; 
+    margin-top: 10px;
+   
+}
+.h4{ 
+    margin-top: 10px;
+    margin-left: 475px; 
+    border: 20px;
+    line-height:0px;
+}
+
+
