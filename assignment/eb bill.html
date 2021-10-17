@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>eb bill calculator</title>
+        <script >function calculate(){
+            // var amt= document.getElementById('amt').value; 
+             //var intrest= document.getElementById('inte').value; 
+            //var tariff_check=document.getElementById("tariff_check").selectedOptions[0].value;
+             var unit = parseInt(document.getElementById("consumed").value) ;
+             var bill; 
+             document.getElementById("demo").innerHtml = "consumed unit:"+unit;
+             //if(tariff_check=="domestic"){
+                if(unit>0 && unit<=100){ 
+                    bill=unit*0;
+                document.getElementById('demo').innerHTML = "the bill is:"+bill;
+                }
+                else if(unit>=101 && unit<=200){ 
+                    bill=(unit-100)*1.5;
+               document.getElementById('demo').innerHTML="the bill is:"+bill;
+                } 
+                else if(unit>=201 && unit<=500){
+                    bill=(100*0)+(100*2)+(unit-200)*3;
+                document.getElementById('demo').innerHTML="the bill is:"+bill;    
+                }
+                else{
+                    bill=(100*0)+(100*3.5)+300*4.5+(unit-500)*6.6;
+                    document.getElementById("demo").innerHTML="the bill is:"+bill;
+                }
+            // }
+            //else{
+            //block of statement
+            //}
+        }
+        
+        
+        function change(){
+            var tariff_check=document.getElementById("tariff_check").selectedOptions[0].value; 
+            if(tariff_check="commericial"){
+        
+            } 
+          }
+          </script>  
+          <style>  
+        .head{
+            display: block;
+            height: 50px;
+            background-color: deepskyblue;
+            text-align: center;
+            margin-left: 102px;
+            margin-right: 102px;
+        }
+        ul{
+        list-style-type: none; 
+        padding-bottom: 10%;
+        margin-top: 30px; 
+        } 
+        
+        ul li{
+        display: inline-block;
+        
+        } 
+        
+        ul li a{
+        margin-top: 20px;
+        text-decoration: none; 
+        color: rgb(8, 8, 8); 
+        padding: 10px  20px ; 
+        font-size: 15px;
+        border: 1px solid transparent; 
+        transition: 0.2s ease-out;
+        } 
+        
+        ul li a:hover{
+        background-color:white ;
+        }  
+        
+        ul li.active a{
+        background-color:white ;
+        }
+        .align{
+        text-align: center;
+        }
+        .submain{
+        
+        background-color:deepskyblue;
+        
+        border:2px solid transparent;
+        margin-left: 90px;
+        margin-right: 90px;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        } 
+        .main{
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color:blanchedalmond;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        
+        }
+        .fo{
+        text-align: justify;
+        margin-left: 150px;
+        border: 2px solid white;
+        background-color: white;
+        margin-right: 150px;
+        padding-left: 60px;
+        font-size: 13px;
+        } 
+        label{
+        width: 320px;
+        display: inline-block;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        } 
+        button{
+        margin-left:35%;
+        
+        }  
+        option{
+        font-size: 15px;
+        } 
+    </style>
+    </head> 
+    <body> 
+        <div class="main">
+         <!--  <h1>TANGEDCO</h1>
+            <h4>TAMILNADU GENERATION AND DISTRIBUTION CORPORATION LTD</h4>
+            CONSUMER SERVICES--> 
+            <div style="background-color: rgb(119, 0, 255);">
+            <img src="https://www.tnebnet.org/awp/resource/img/logo6.png">
+        </div> <p></p>
+        
+        <div class="submain">
+        <div class="head" >
+      
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#Guide lines">Guide lines</a></li>
+                <li><a href="#Bill calculator">Bill calculator</a></li>
+                <li><a href="#login">login</a></li>
+                <li><a href="#Quickpay">Quickpay</a></li>
+            </ul>
+        </div>
+        <h3 style="text-align: center; font-family: 'Be Vietnam Pro', sans-serif;color:rgb(238, 10, 10);font-size: 28px;">CALCULATOR</h3>
+         <div class="fo"> 
+             <form name="formname" onsubmit=" return false">
+                <br><br><br>
+            <label>tariff check</label> 
+            <select id="tariff_check" onchange="change()">
+                <option  value="domestic">domestic</option> 
+                <option  value="commercial">commercial</option>
+            </select>
+             <br> <br>
+             <label>biling cycle:</label> 
+             <select>
+                 <option>bi-monthly<option> 
+                 <option>monthly<option>
+             </select> 
+             <br><br>
+             <label>contracted load (not required for 'domestic tariff):</label>
+            <input  id="load" type="number" > <br> 
+            <br>
+            
+            <label>consumed units:</label>  
+            <input id="consumed" type="number"> <br><br>
+            <label>KVAH(not required for'domestic tariff):</label>
+            <input id="kvah" type="number"> <br><br><br>
+            <button id="btn" onclick="calculate()">CALCULATE</button>
+
+            <div id="demo"></div>
+            </form>
+            <br><br><br>
+        </div>  
+        
+        
+        <div class="head">
+            <p class="align" style="font-size: 13px;"> Copyright @2013.Tamilnadu Genration and dstribution corporation limited<br>This website is best viewed in IE 8+,Firefox3+ and Google chrome3+ @1024x768 resolution</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div> 
+    
+    </body>
+</html>
